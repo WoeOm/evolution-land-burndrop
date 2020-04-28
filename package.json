@@ -1,0 +1,26 @@
+{
+  "name": "evolution-burndrop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-ropsten-crab": "browserify -t brfs js/ropsten-crab.js -o bundle-ropsten-crab.js",
+    "build-mainnet-crab": "browserify -t brfs js/mainnet-crab.js -o bundle-mainnet-crab.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eth-sig-util": "^2.3.0",
+    "ethereumjs-util": "^5.1.1",
+    "ethjs": "^0.3.0",
+    "web3": "1.2.7",
+    "@polkadot/util-crypto": "^1.6.1",
+    "@polkadot/util": "^1.6.1"
+  },
+  "devDependencies": {
+    "babel-runtime": "^6.26.0",
+    "brfs": "^1.4.3",
+    "browserify": "^16.2.3"
+  }
+}
